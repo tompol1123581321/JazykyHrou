@@ -1,0 +1,464 @@
+* {
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 0.66;
+}
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  height: 100%;
+  line-height: 1.6;
+  font-size: 1.4rem;
+  letter-spacing: 1.2px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.paragrapht {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: rgb(85, 84, 84);
+  padding-top: 4rem;
+}
+#uvod {
+  height: 100vh;
+  background-image: url(/img/118212458_914913235668260_1636549837666526941_n.jpg);
+  background-position: center;
+  background-size: cover;
+  border-bottom: 3px solid black;
+}
+#Logo {
+  font-size: 0.8rem;
+  word-spacing: 5px;
+  padding-bottom: 0rem;
+  padding-top: 1rem;
+  margin: 0;
+  text-align: center;
+  max-width: 100%;
+}
+#svg {
+  max-width: 40vw;
+  animation: fillap 0.5s ease forwards 3.5s;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 2vh;
+  text-decoration: none;
+}
+.navlinks {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding-top: 0.3rem;
+  z-index: 2;
+}
+a {
+  color: rgb(88, 85, 85);
+  border-radius: 0.7rem;
+  padding: 0.3rem;
+  transition: 0.6s;
+  text-decoration: none;
+  list-style: none;
+}
+ul a:hover {
+  background-color: lightpink;
+  text-decoration: none;
+  color: rgb(88, 85, 85);
+}
+
+.icon {
+  position: fixed;
+  max-width: 6vw;
+  top: 2%;
+  padding-left: 10px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.zahlavi {
+  background-color: rgb(163, 164, 165);
+  height: 6rem;
+}
+.copy {
+  color: rgb(88, 85, 85);
+  text-align: center;
+  font-size: 16px;
+  padding-top: 10px;
+  text-transform: uppercase;
+}
+@media (max-width: 500px) {
+  .icon {
+    max-width: 12vw;
+  }
+  .carousel-inner {
+    max-width: 100%;
+  }
+}
+div.Spopis {
+  max-height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-left: 10rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0%;
+}
+
+.cloud {
+  max-width: 13vw;
+  position: absolute;
+  top: 24%;
+}
+#cloud1 {
+  right: 3%;
+  animation: movingcloud1 10s infinite alternate ease-in-out;
+}
+#cloud2 {
+  top: 18%;
+  left: 0%;
+  animation: movingcloud2 10s infinite ease-in-out;
+}
+
+@keyframes movingcloud1 {
+  0% {
+    transform: translateX(3%, 24%);
+  }
+  50% {
+    transform: translate(15%, 16%);
+  }
+  75% {
+    transform: translate(5%, 24%);
+  }
+  100% {
+    transform: translateX(3%, 24%);
+  }
+}
+@keyframes movingcloud2 {
+  0% {
+    transform: translateX(0%, 16%);
+  }
+  50% {
+    transform: translate(-15%, 12%);
+  }
+  75% {
+    transform: translate(0%, 10%);
+  }
+  100% {
+    transform: translateX(0%, 12%);
+  }
+}
+#svg path:nth-child(2) {
+  stroke-dasharray: 156.4;
+  stroke-dashoffset: 156.4;
+  animation: line-animation 2s ease forwards 0.4s;
+}
+#svg path:nth-child(3) {
+  stroke-dasharray: 245.1;
+  stroke-dashoffset: 245.1;
+  animation: line-animation 2s ease forwards 0.8s;
+}
+#svg path:nth-child(4) {
+  stroke-dasharray: 226.8;
+  stroke-dashoffset: 226.8;
+  animation: line-animation 2s ease forwards 1.2s;
+}
+#svg path:nth-child(5) {
+  stroke-dasharray: 186;
+  stroke-dashoffset: 186;
+  animation: line-animation 2s ease forwards 1.6s;
+}
+#svg path:nth-child(6) {
+  stroke-dasharray: 256.17;
+  stroke-dashoffset: 256.17;
+  animation: line-animation 2s ease forwards 2s;
+}
+#svg path:nth-child(7) {
+  stroke-dasharray: 186;
+  stroke-dashoffset: 186;
+  animation: line-animation 2s ease forwards 2.4s;
+}
+#svg path:nth-child(8) {
+  stroke-dasharray: 267.26;
+  stroke-dashoffset: 267.26;
+  animation: line-animation 2s ease forwards 2.8s;
+}
+#svg path:nth-child(9) {
+  stroke-dasharray: 274.5;
+  stroke-dashoffset: 274.5;
+  animation: line-animation 2s ease forwards 3.2s;
+}
+#svg path:nth-child(10) {
+  stroke-dasharray: 282.97;
+  stroke-dashoffset: 282.97;
+  animation: line-animation 2s ease forwards 3.6s;
+}
+#svg path:nth-child(11) {
+  stroke-dasharray: 241.9;
+  stroke-dashoffset: 241.9;
+  animation: line-animation 2s ease forwards 4s;
+}
+@keyframes line-animation {
+  to {
+    stroke-dashoffset: 0%;
+  }
+}
+#saka {
+  max-height: 40vh;
+  padding-left: 6vh;
+  padding-right: 6vh;
+  margin: auto;
+}
+#Sakapopis {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 3rem;
+  max-width: 80%;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  border-top: solid gray 2px;
+  margin: auto;
+}
+
+#sakatext {
+  max-width: 65%;
+  text-align: left;
+}
+#tynkapopis {
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 80%;
+  padding-top: 3rem;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  border-top: solid gray 2px;
+  margin: auto;
+}
+#tynkatext {
+  max-width: 65%;
+  text-align: left;
+}
+#tynka {
+  max-height: 40vh;
+  padding-left: 6vh;
+  padding-right: 6vh;
+  margin: auto;
+}
+#tompopis {
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 80%;
+  padding-top: 3rem;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  border-top: solid gray 2px;
+  margin: auto;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+#tomtext {
+  max-width: 65%;
+  text-align: left;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#tom {
+  max-height: 40vh;
+  padding-left: 6vh;
+  padding-right: 6vh;
+  margin: auto;
+}
+.jmena {
+  text-align: center;
+}
+
+#kurznj {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 100%;
+  font-size: 1.2rem;
+  padding-bottom: 4rem;
+  list-style: none;
+}
+#kurzaj {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 100%;
+  font-size: 1.2rem;
+  padding-bottom: 4rem;
+  list-style: none;
+}
+.kurzname {
+  text-align: center;
+  padding-top: 6rem;
+  color: rgb(92, 91, 91);
+}
+h3.kurzname {
+  padding-top: 0.2rem;
+}
+.napln {
+  text-align: center;
+  font-size: 1.7rem;
+  padding-bottom: 1rem;
+  font-style: normal;
+}
+.minp {
+  padding-bottom: 0;
+  text-align: center;
+}
+.pop {
+  margin: 0;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+#cont {
+  padding: 0;
+}
+#cont1 {
+  padding: 0;
+}
+#cont2 {
+  padding: 0;
+  margin: 0;
+}
+#con {
+  padding-left: 5vw;
+  padding-bottom: 10vh;
+  padding-top: 10vh;
+}
+#gal {
+  min-height: 100vh;
+  background-color: black;
+  max-width: 100%;
+  margin-top: 0;
+  padding-top: 0;
+}
+.carousel-inner {
+  margin: auto;
+  max-width: 80%;
+}
+.vitam {
+  text-align: center;
+  padding-top: 7rem;
+}
+#tex1 {
+  padding: 0;
+  padding-top: 4rem;
+  text-align: center;
+}
+.tpr {
+  padding-top: 0;
+}
+#text2 {
+  padding-bottom: 3rem;
+}
+#odskok {
+  max-width: 80vw;
+  margin: auto;
+}
+H4.cena {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+}
+#cena1 {
+  background-color: lightskyblue;
+  padding: 0.5rem;
+  border-radius: 15px;
+  max-width: max-content;
+  margin: auto;
+}
+#cena2 {
+  background-color: lightskyblue;
+  padding: 0.5rem;
+  border-radius: 15px;
+  max-width: max-content;
+  margin: auto;
+}
+@media (max-width: 800px) {
+  #Logo {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    line-height: 1.5rem;
+    height: 100%;
+    text-align: center;
+    letter-spacing: 2.2px;
+    color: rgb(88, 85, 85);
+    text-transform: uppercase;
+    word-spacing: 3px;
+    margin: 0;
+  }
+  p.pop {
+    padding-bottom: 4rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  #sakatext {
+    max-width: 100%;
+  }
+  #tynkatext {
+    max-width: 100%;
+  }
+  #tomtext {
+    max-width: 100%;
+  }
+  p {
+    padding: 1.5rem;
+  }
+  .navlinks {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.6px;
+  }
+  .icon {
+    max-width: 12vw;
+  }
+  .carousel-inner {
+    max-width: 100%;
+  }
+  #odskok {
+    max-width: 100%;
+  }
+  #Sakapopis {
+    max-width: 100%;
+  }
+  #tynkapopis {
+    max-width: 100%;
+  }
+  #tompopis {
+    max-width: 100%;
+  }
+}
+@media (min-width: 2000px) {
+  #odskok {
+    max-width: 65vw;
+    margin: auto;
+  }
+  #sakapopis {
+    max-width: 60%;
+  }
+  #tynkapopis {
+    max-width: 60%;
+  }
+  #tompopis {
+    max-width: 60%;
+  }
+}
